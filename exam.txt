@@ -1,0 +1,32 @@
+1.
+rmdir \s \q <directory>
+mkdir <directory>
+xcopy * <directory>/ \s \e \y
+
+rm -rf /var/www/html/webdirectory/*
+cp -r * /var/www/html/webdirectory/
+
+5.
+DOCKERFILE
+FROM httpd:2.4   
+COPY index.html /usr/local/apache2/htdocs/ 
+
+
+docker build -t my-apache-server . 
+
+docker run -p 8080:80 -d my-apache-server 
+
+docker stop <container_id> 
+docker rm <container_id> 
+docker rmi my-apache-server
+
+
+6.
+DOCKERFILE
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+EXPOSE 80
+
+docker rm --force container1
+docker build -t nginx-image1 .
+docker run -d -p 8081:80 --name=container1 nginx-image1
