@@ -30,3 +30,35 @@ EXPOSE 80
 docker rm --force container1
 docker build -t nginx-image1 .
 docker run -d -p 8081:80 --name=container1 nginx-image1
+2 nd 
+cd path
+git init
+git status 
+gitadd file name
+git commit -m"hhh"
+git status
+     d
+   l
+branch feature
+checkout fea
+check out master
+git merge feature
+git remote add origin url padte
+git push origin master
+
+3rd
+cd
+git clone url
+cd repo name
+git status
+git add file name
+gir commit -m "hsheh"
+git branch featur
+gir checkout featur
+git remote add origin paste url
+git push orgin featu
+git checkout master
+git pull origin master
+
+4th 
+git lab
