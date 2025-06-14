@@ -15,6 +15,9 @@ COPY index.html /usr/local/apache2/htdocs/
 docker build -t my-apache-server . 
 
 docker run -p 8080:80 -d my-apache-server 
+web browser pofu http://local host:8080
+docker stop container id
+
 
 docker stop <container_id> 
 docker rm <container_id> 
@@ -62,3 +65,8 @@ git pull origin master
 
 4th 
 git lab
+
+5th 
+cd path name
+folder index.html code small
+docker file 
